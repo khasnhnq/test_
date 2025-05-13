@@ -30,6 +30,6 @@ time.sleep(2)
 output = driver.find_element(By.ID, "output").text
 assert "Nguyen Van A" in output
 assert "email@example.com" in output
-print("✅ TC Passed")
+print("TC Passed")
 
 driver.quit()
