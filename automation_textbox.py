@@ -24,6 +24,6 @@ time.sleep(2)
 # Kiểm tra kết quả
 output = driver.find_element(By.ID, "output").text
 assert all(val in output for val in fields.values())
-print("✅ Automation Passed")
+print("Automation Passed")
 
 driver.quit()
