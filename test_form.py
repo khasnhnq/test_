@@ -81,7 +81,7 @@ driver.execute_script("arguments[0].click();", submit)  # Dùng JavaScript để
 # Step 13: Kiểm tra xác nhận
 modal = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.XPATH, "//div[contains(@class,'modal-content')]")))
 assert "Thanks for submitting the form" in modal.text
-print("✅ Form đã được submit thành công!")
+print("Form đã được submit thành công!")
 
 # Đợi vài giây để xem kết quả
 time.sleep(3)
