@@ -25,12 +25,12 @@ driver.find_element(By.ID, "submit").click()
 time.sleep(2)
 
 output = driver.find_element(By.ID, "output").text
-print("🔍 Output sau submit với email sai:", output)
+print("Output sau submit với email sai:", output)
 
 # Expected: Không nên hiển thị output
 if "abc123" in output:
-    print("❌ Bug: Hệ thống chấp nhận email sai định dạng!")
+    print("Bug: Hệ thống chấp nhận email sai định dạng!")
 else:
-    print("✅ Passed: Email sai bị từ chối.")
+    print("Passed: Email sai bị từ chối.")
 
 driver.quit()
